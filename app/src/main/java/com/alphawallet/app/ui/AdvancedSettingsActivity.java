@@ -183,16 +183,16 @@ public class AdvancedSettingsActivity extends BaseActivity
     {
         LinearLayout advancedSettingsLayout = findViewById(R.id.layout);
         advancedSettingsLayout.addView(nodeStatus);
-        advancedSettingsLayout.addView(console);
+       // advancedSettingsLayout.addView(console);
         advancedSettingsLayout.addView(clearBrowserCache);
-        advancedSettingsLayout.addView(tokenScriptManagement);
-        advancedSettingsLayout.addView(fullScreenSettings);
+       // advancedSettingsLayout.addView(tokenScriptManagement);
+      //  advancedSettingsLayout.addView(fullScreenSettings);
         advancedSettingsLayout.addView(refreshTokenDatabase);
         advancedSettingsLayout.addView(eip1559Transactions);
-        advancedSettingsLayout.addView(tokenScriptViewer);
-        advancedSettingsLayout.addView(analytics);
-        advancedSettingsLayout.addView(crashReporting);
-        advancedSettingsLayout.addView(developerOverride);
+        //advancedSettingsLayout.addView(tokenScriptViewer);
+       // advancedSettingsLayout.addView(analytics);
+      //  advancedSettingsLayout.addView(crashReporting);
+     //   advancedSettingsLayout.addView(developerOverride);
     }
 
     private void onNodeStatusClicked()

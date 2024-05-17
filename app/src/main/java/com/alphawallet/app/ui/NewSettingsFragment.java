@@ -111,7 +111,7 @@ public class NewSettingsFragment extends BaseFragment
 
         addSettingsToLayout();
 
-        setInitialSettingsData(view);
+     //   setInitialSettingsData(view);
 
         initBackupWarningViews(view);
 
@@ -259,7 +259,7 @@ public class NewSettingsFragment extends BaseFragment
 
         myAddressSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_wallet_address)
+                        .withIcon(R.drawable.mega)
                         .withTitle(R.string.title_show_wallet_address)
                         .withListener(this::onShowWalletAddressSettingClicked)
                         .build();
@@ -394,10 +394,10 @@ public class NewSettingsFragment extends BaseFragment
 
     private void setInitialSettingsData(View view)
     {
-        TextView appVersionText = view.findViewById(R.id.text_version);
-        appVersionText.setText(String.format(Locale.getDefault(), "%s (%d)", BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE));
-        TextView tokenScriptVersionText = view.findViewById(R.id.text_tokenscript_compatibility);
-        tokenScriptVersionText.setText(TOKENSCRIPT_CURRENT_SCHEMA);
+      //  TextView appVersionText = view.findViewById(R.id.text_version);
+     //   appVersionText.setText(String.format(Locale.getDefault(), "%s (%d)", BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE));
+      //  TextView tokenScriptVersionText = view.findViewById(R.id.text_tokenscript_compatibility);
+       // tokenScriptVersionText.setText(TOKENSCRIPT_CURRENT_SCHEMA);
     }
 
     private void openShowSeedPhrase(Wallet wallet)
