@@ -1,6 +1,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlphaWallet/alpha-wallet-android)
 
-# AlphaWallet - Advanced, Open Source Ethereum Mobile Wallet & dApp Browser for Android hi
+# AlphaWallet - Advanced, Open Source Ethereum Mobile Wallet & dApp Browser for Android yes we are here
 
 [![Lint](https://github.com/AlphaWallet/alpha-wallet-android/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/AlphaWallet/alpha-wallet-android/actions/workflows/lint.yml)
 [![Unit test](https://github.com/AlphaWallet/alpha-wallet-android/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/AlphaWallet/alpha-wallet-android/actions/workflows/ci.yml)
