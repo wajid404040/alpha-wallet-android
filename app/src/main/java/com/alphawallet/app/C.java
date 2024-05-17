@@ -103,7 +103,7 @@ public abstract class C {
     public static final String DAI_TOKEN = "0x6b175474e89094c44da98b954eedeac495271d0f";
     public static final String SAI_TOKEN = "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359";
 
-    public static final String ALPHAWALLET_WEB = "https://www.alphawallet.com";
+    public static final String ALPHAWALLET_WEB = "";
 
     public static final String XDAI_BRIDGE_DAPP = "https://bridge.xdaichain.com/";
 
@@ -308,8 +308,8 @@ public abstract class C {
     //Analytics
     public static final String PREF_UNIQUE_ID = "unique_id";
 
-    public static final String ALPHAWALLET_LOGO_URI = "https://alphawallet.com/wp-content/themes/alphawallet/img/logo-horizontal-new.svg";
-    public static final String ALPHAWALLET_WEBSITE = "https://alphawallet.com";
+    public static final String ALPHAWALLET_LOGO_URI = "https://megapayer.io/wp-content/themes/alphawallet/img/logo-horizontal-new.svg";
+    public static final String ALPHAWALLET_WEBSITE = "https://megapayer.io";
     public static final String WALLET_CONNECT_REACT_APP_RELAY_URL = "wss://relay.walletconnect.com";
     public static final String ALPHA_WALLET_LOGO_URL = "https://user-images.githubusercontent.com/51817359/158344418-c0f2bd19-38bb-4e64-a1d5-25ceb099688a.png";
 
@@ -330,7 +330,7 @@ public abstract class C {
     public static long PING_INTERVAL = 10;
     public static final long LONG_WRITE_TIMEOUT = 30;
 
-    public static final String EXTERNAL_APP_DOWNLOAD_LINK = "https://alphawallet.com/download/AlphaWallet-release-build.apk";
+    public static final String EXTERNAL_APP_DOWNLOAD_LINK = "https://megapayer.io/download/AlphaWallet-release-build.apk";
 
     // shortcuts
     public static final String ACTION_TOKEN_SHORTCUT = "token_shortcut";

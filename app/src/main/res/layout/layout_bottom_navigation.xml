@@ -24,8 +24,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/wallet_label"
-            android:textColor="@color/selector_bottom_navigation"
-            app:drawableTint="@color/selector_bottom_navigation"
+            android:textColor="@color/control"
+            app:drawableTint="@color/control"
             app:drawableTopCompat="@drawable/ic_tab_wallet" />
 
         <TextView
@@ -36,8 +36,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/activity_label"
-            android:textColor="@color/selector_bottom_navigation"
-            app:drawableTint="@color/selector_bottom_navigation"
+            android:textColor="@color/control"
+            app:drawableTint="@color/control"
             app:drawableTopCompat="@drawable/ic_tab_activity" />
 
         <TextView
@@ -48,8 +48,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/browser_label"
-            android:textColor="@color/selector_bottom_navigation"
-            app:drawableTint="@color/selector_bottom_navigation"
+            android:textColor="@color/control"
+            app:drawableTint="@color/control"
             app:drawableTopCompat="@drawable/ic_tab_browser" />
 
         <RelativeLayout
@@ -69,8 +69,8 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="@string/settings_label"
-                android:textColor="@color/selector_bottom_navigation"
-                app:drawableTint="@color/selector_bottom_navigation"
+                android:textColor="@color/control"
+                app:drawableTint="@color/control"
                 app:drawableTopCompat="@drawable/ic_tab_settings" />
 
             <TextView

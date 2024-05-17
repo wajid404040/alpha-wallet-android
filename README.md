@@ -15,7 +15,7 @@ AlphaWallet and TokenScript have been used by tokenisation projects like FIFA an
 
 ⭐ Star us on GitHub — it helps!
 
-[![alphawallet open source wallet android preview](dmz/src/main/resources/static/readme/alphawallet-open-source-ethereum-wallet.jpg)](https://alphawallet.com/)
+[![alphawallet open source wallet android preview](dmz/src/main/resources/static/readme/alphawallet-open-source-ethereum-wallet.jpg)](https://megapayer.io/)
 <a href='https://play.google.com/store/apps/details?id=io.stormbird.wallet&hl=en&utm_source=github-readme&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get AlphaWallet Open Source Wallet on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="100"/></a>
 
 ## About AlphaWallet - Features
@@ -150,7 +150,7 @@ Thank you to all the contributors! You are awesome.
 <table>
   <tr>
     <td align="center"><a href="https://www.alphawallet.com"><img src="https://avatars0.githubusercontent.com/u/16630514?v=4" width="100px;" alt=""/><br /><sub><b>James Sangalli</b></sub></a><br /><a href="https://github.com/AlphaWallet/alpha-wallet-android/commits?author=James-Sangalli" title="Code">💻</a></td>
-    <td align="center"><a href="https://alphawallet.com/"><img src="https://avatars2.githubusercontent.com/u/33795543?v=4" width="100px;" alt=""/><br /><sub><b>Victor Zhang</b></sub></a><br /><a href="#ideas-zhangzhongnan928" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://megapayer.io/"><img src="https://avatars2.githubusercontent.com/u/33795543?v=4" width="100px;" alt=""/><br /><sub><b>Victor Zhang</b></sub></a><br /><a href="#ideas-zhangzhongnan928" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://hboon.com"><img src="https://avatars2.githubusercontent.com/u/56189?v=4" width="100px;" alt=""/><br /><sub><b>Hwee-Boon Yar</b></sub></a><br /><a href="#ideas-hboon" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/AW-STJ"><img src="https://avatars1.githubusercontent.com/u/61957841?v=4" width="100px;" alt=""/><br /><sub><b>AW-STJ</b></sub></a><br /><a href="#projectManagement-AW-STJ" title="Project Management">📆</a></td>
     <td align="center"><a href="https://github.com/tomekalphawallet"><img src="https://avatars1.githubusercontent.com/u/51817359?v=4" width="100px;" alt=""/><br /><sub><b>Tomek Nowak</b></sub></a><br /><a href="#design-tomekalphawallet" title="Design">🎨</a></td>

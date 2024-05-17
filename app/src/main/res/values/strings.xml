@@ -238,7 +238,7 @@
     <string name="tx_label">Transactions</string>
     <string name="browser_label">Browser</string>
     <string name="settings_label">Settings</string>
-    <string name="activity_label">Activity</string>
+    <string name="activity_label">History</string>
     <string name="toolbar_header_importing_tickets">Importing Tokens</string>
     <string name="ticket">Ticket</string>
     <string name="tickets">Tickets</string>
@@ -446,7 +446,7 @@
     <string name="network">Networks</string>
     <string name="select_active_networks">Select Active Networks</string>
     <string name="title_enabled_networks">Enabled Networks (%s)</string>
-    <string name="collectibles">Collectibles</string>
+    <string name="collectibles">Nfts</string>
     <string name="token_function">Token Function</string>
     <string name="channel_description">Alphawallet notification channel</string>
     <string name="error_camera_permission_denied">Permission to use the camera was denied.</string>
@@ -885,7 +885,7 @@
     <string name="add_new_price_alert">Add New Price Alert</string>
     <string name="current_price">Current Price:</string>
     <string name="tab_info">Info</string>
-    <string name="tab_activity">Activity</string>
+    <string name="tab_activity">History</string>
     <string name="tab_alert">Alerts</string>
     <string name="unknown_network_title">Unknown Network</string>
     <string name="unknown_network">This dapp is requesting to change to an unknown chain: %1$s</string>
@@ -983,7 +983,7 @@
     <string name="delete_empty">Delete Empty</string>
     <string name="delete_all">Delete All</string>
     <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
-    <string name="buy_with_ramp">Buy with Ramp</string>
+<!-- <string name="buy_with_ramp">Buy with Ramp</string> -->
     <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
