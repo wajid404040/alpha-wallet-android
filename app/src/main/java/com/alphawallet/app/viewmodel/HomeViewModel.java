@@ -610,6 +610,8 @@ public class HomeViewModel extends BaseViewModel
 
     public void tryToShowEmailPrompt(Context context, View successOverlay, Handler handler, Runnable onSuccessRunnable)
     {
+        // Removed the email prompt display logic
+        /*
         if (preferenceRepository.getLaunchCount() == 4)
         {
             EmailPromptView emailPromptView = new EmailPromptView(context, successOverlay, handler, onSuccessRunnable);
@@ -622,6 +624,7 @@ public class HomeViewModel extends BaseViewModel
             emailPromptDialog.setOnShowListener(dialog -> behavior.setPeekHeight(emailPromptView.getHeight()));
             emailPromptDialog.show();
         }
+        */
     }
 
     public void tryToShowWhatsNewDialog(Context context)

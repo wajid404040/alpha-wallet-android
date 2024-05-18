@@ -75,7 +75,7 @@ public class NotificationService
                                                                 openAppIntent, PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_alpha_notification)
+                .setSmallIcon(R.drawable.mega)
                 .setColor(color)
                 .setContentTitle(title)
                 .setContentText(content)
@@ -114,7 +114,7 @@ public class NotificationService
                 openAppIntent, PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_alpha_notification)
+                .setSmallIcon(R.drawable.mega)
                 .setColor(color)
                 .setContentTitle(title)
                 .setContentText(content)
