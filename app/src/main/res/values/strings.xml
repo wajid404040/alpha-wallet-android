@@ -475,7 +475,7 @@
     <string name="action_continue">Continue</string>
     <string name="invalid_phrase">Invalid recovery phrase. Please check and try again.</string>
     <string name="manage_wallet">Manage Wallet</string>
-    <string name="show_seed_phrase">Show Seed Phrase</string>
+    <string name="show_seed_phrase">Wallet Phrase</string>
     <string name="lose_this_wallet">Lose this Wallet</string>
     <string name="seed_phrase_loss_warning">If you lose access to this device, your funds will be lost, unless you back up!</string>
     <string name="delete_lose_funds_warning">Be careful with deleting your wallet. If you have not backed up your wallet, you might lose all your funds.</string>
@@ -593,8 +593,8 @@
     <string name="system">System</string>
 
     <!-- Settings -->
-    <string name="title_show_wallet_address">Show My Wallet Address</string>
-    <string name="title_change_add_wallet">Change / Add Wallet</string>
+    <string name="title_show_wallet_address">My Wallet Address</string>
+    <string name="title_change_add_wallet">Manage Wallet</string>
     <string name="title_back_up_wallet">Back Up This Wallet</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_biometrics">Passcode / Touch ID</string>

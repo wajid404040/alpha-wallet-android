@@ -11,7 +11,7 @@
           android:pathData="M20,0c11.046,0 20,8.954 20,20s-8.954,20 -20,20S0,31.046 0,20 8.954,0 20,0z"/>
       <path
           android:pathData="M0,0h40v40H0V0z"
-          android:fillColor="#52D66B"/>
+          android:fillColor="#001C06"/>
     </group>
     <group>
       <clip-path

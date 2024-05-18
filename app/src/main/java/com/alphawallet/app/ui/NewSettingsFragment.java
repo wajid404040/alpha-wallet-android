@@ -259,7 +259,7 @@ public class NewSettingsFragment extends BaseFragment
 
         myAddressSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.mega)
+                        .withIcon(R.drawable.ic_settings_wallet_address)
                         .withTitle(R.string.title_show_wallet_address)
                         .withListener(this::onShowWalletAddressSettingClicked)
                         .build();
