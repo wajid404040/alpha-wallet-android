@@ -7,7 +7,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+     />
 
     <ScrollView
             android:id="@+id/network_input_scroll"

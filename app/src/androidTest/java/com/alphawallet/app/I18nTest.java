@@ -41,5 +41,7 @@ public class I18nTest extends BaseE2ETest
         selectMenu("ဘာသာစကားပြောင်းမည်");
         click(withText("အင်ဒိုနီးရှား"));
         pressBack();
+
+      
     }
 }

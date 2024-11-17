@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_setting"
     android:layout_width="match_parent"
-    android:layout_height="61dp"
+    android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true">
 
@@ -15,7 +15,9 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/standard_16"
-        android:src="@drawable/ic_settings_wallet_address" />
+        android:src="@drawable/ic_settings_wallet_address"
+        android:visibility="gone"
+        app:tint="@color/gray" /> <!-- Gray color tint -->
 
     <LinearLayout
         android:id="@+id/layout_text"
@@ -31,6 +33,7 @@
             android:id="@+id/setting_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/TitleTextStyle" 
             tools:text="Setting Title" />
 
         <TextView
@@ -41,9 +44,8 @@
             android:ellipsize="middle"
             android:lines="1"
             android:maxLines="1"
-            android:visibility="gone"
             tools:text="Setting Subtitle"
-            tools:visibility="visible" />
+            tools:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,10 +58,10 @@
 
         <ImageView
             android:id="@+id/arrow_right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_marginEnd="@dimen/small_12"
-            android:src="@drawable/ic_arrow_right"
+            android:src="@drawable/settingicon"
             android:visibility="gone"
             app:tint="?colorControlNormal"
             tools:visibility="visible" />
@@ -76,5 +78,24 @@
             android:visibility="gone"
             tools:visibility="visible" />
     </LinearLayout>
+
+    <!-- Gray line -->
+    <View
+        android:id="@+id/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout_text"
+        android:background="@android:color/darker_gray"
+        /> <!-- Reduced margin -->
+
+    <!-- Second title below gray line -->
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gray_line"
+        android:layout_marginStart="@dimen/standard_16"
+        style="@style/TitleTextStyle" 
+        tools:text="Second Title" />
 
 </RelativeLayout>

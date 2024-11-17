@@ -17,6 +17,7 @@
         android:paddingStart="@dimen/cozy_20"
         android:paddingEnd="@dimen/cozy_20"
         android:text="@string/write_down_seed_phrase"
+        android:textColor="#000000"
         android:textAlignment="center" />
 
     <com.google.android.flexbox.FlexboxLayout
@@ -27,6 +28,7 @@
         android:layout_marginLeft="@dimen/standard_16"
         android:layout_marginTop="@dimen/double_base_48"
         android:layout_marginRight="@dimen/standard_16"
+      android:textColor="#000000"
         app:flexDirection="row"
         app:flexWrap="wrap" />
 

@@ -50,33 +50,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout_theme_dark"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_theme_dark" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/standard_16"
-                    android:layout_marginBottom="@dimen/tiny_8"
-                    android:text="@string/setting_theme_dark" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/radio_theme_dark"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="false" />
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/layout_theme_auto"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

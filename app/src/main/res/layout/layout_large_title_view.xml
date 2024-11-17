@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,28 +8,76 @@
     android:orientation="vertical"
     android:padding="@dimen/standard_16">
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/Aw.Typography.Title.XLarge.Bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:lines="1"
-        android:text="@string/unknown_balance_without_symbol"
-        app:autoSizeTextType="uniform"
-        tools:text="$100,000,000,000,000.00" />
+        android:background="@drawable/gradient_background"
+        android:clipToOutline="true">
 
-    <TextView
-        android:id="@+id/subtitle"
-        style="@style/Aw.Typography.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:lines="1"
-        android:text="@string/unknown_balance_without_symbol"
-        app:autoSizeTextType="uniform"
-        tools:text="+100.00 Today (+100%)" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start|center_vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/current_balance_label"
+                style="@style/Aw.Typography.Title.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Balance"
+                android:textColor="@android:color/white"
+                android:paddingBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Aw.Typography.Title.XLarge.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:lines="1"
+                android:text="@string/unknown_balance_without_symbol"
+                android:textColor="@android:color/white"
+                app:autoSizeTextType="uniform"
+                tools:text="$100,000,000,000,000.00"
+                android:layout_marginStart="8dp" />
+
+            <!-- Subtitle with Icon -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/percentage_box_background"
+                android:padding="4dp"
+                android:layout_marginStart="8dp">
+
+                <ImageView
+                    android:id="@+id/subtitle_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/percent_icon"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/subtitle_icon"
+                    android:layout_centerVertical="true"
+                    android:text="@string/unknown_balance_without_symbol"
+                    android:textColor="@android:color/white"
+                    app:autoSizeTextType="uniform"
+                    tools:text="(+100%) +100.00 Today"
+                    android:layout_marginStart="4dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
 
 </LinearLayout>

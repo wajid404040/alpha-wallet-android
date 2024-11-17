@@ -1,6 +1,5 @@
 package com.alphawallet.app.ui;
-
-
+import android.graphics.Color;
 import static android.app.Activity.RESULT_OK;
 import static com.alphawallet.app.C.CHANGED_LOCALE;
 import static com.alphawallet.app.C.CHANGE_CURRENCY;
@@ -338,12 +337,12 @@ public class NewSettingsFragment extends BaseFragment
                         .withListener(this::onAdvancedSettingClicked)
                         .build();
 
-        darkModeSetting =
-                new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_darkmode)
-                        .withTitle(R.string.title_dark_mode)
-                        .withListener(this::onDarkModeSettingClicked)
-                        .build();
+        // darkModeSetting =
+        //         new SettingsItemView.Builder(getContext())
+        //                 .withIcon(R.drawable.ic_settings_darkmode)
+        //                 .withTitle(R.string.title_dark_mode)
+        //                 .withListener(this::onDarkModeSettingClicked)
+        //                 .build();
 
         supportSetting =
                 new SettingsItemView.Builder(getContext())
@@ -385,7 +384,6 @@ public class NewSettingsFragment extends BaseFragment
 
         systemSettingsLayout.addView(changeCurrency, systemIndex++);
 
-        systemSettingsLayout.addView(darkModeSetting, systemIndex++);
 
         systemSettingsLayout.addView(advancedSetting, systemIndex++);
 
@@ -551,23 +549,30 @@ public class NewSettingsFragment extends BaseFragment
     void addBackupNotice(GenericWalletInteract.BackupLevel walletValue)
     {
         layoutBackup.setVisibility(View.VISIBLE);
+        layoutBackup.setBackgroundColor(Color.parseColor("#D2DDDE")); // Set background color
+    
         if (wallet != null)
         {
             backupButton.setText(getString(R.string.back_up_now));
             backupButton.setOnClickListener(v -> openBackupActivity(wallet));
+            backupButton.setTextColor(Color.WHITE); // Set text color to white
+    
             backupTitle.setText(getString(R.string.title_back_up_your_wallet));
+    
             backupDetail.setText(getString(R.string.backup_wallet_detail));
+    
             closeBtn.setOnClickListener(v -> {
                 backedUp(wallet.address);
                 viewModel.setIsDismissed(wallet.address, true);
             });
-
+    
             if (getActivity() != null)
             {
                 ((HomeActivity) getActivity()).addSettingsBadgeKey(C.KEY_NEEDS_BACKUP);
             }
         }
     }
+    
 
     private void backedUp(String walletAddress)
     {
@@ -634,11 +639,11 @@ public class NewSettingsFragment extends BaseFragment
         advancedSettingsHandler.launch(intent);
     }
 
-    private void onDarkModeSettingClicked()
-    {
-        Intent intent = new Intent(getActivity(), SelectThemeActivity.class);
-        startActivity(intent);
-    }
+    // private void onDarkModeSettingClicked()
+    // {
+    //     Intent intent = new Intent(getActivity(), SelectThemeActivity.class);
+    //     startActivity(intent);
+    // }
 
     private void onSupportSettingClicked()
     {

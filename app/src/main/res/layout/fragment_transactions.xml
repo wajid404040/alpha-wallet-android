@@ -5,25 +5,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"/>
 
     <View
         android:id="@+id/separator"
         style="@style/Aw.Component.Separator"
         android:layout_below="@id/toolbar" />
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/refresh_layout"
+    <!-- Removed headings container -->
+
+    <!-- Layout for content below headings with white background and shadow -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/separator">
+        android:layout_below="@id/separator"
+        android:layout_margin="16dp"
+        android:background="@drawable/detail_transaction">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
 
     <com.alphawallet.app.widget.SystemView
         android:id="@+id/system_view"

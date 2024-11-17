@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="@dimen/standard_16"
-        android:text="@string/activity_label" />
+        android:text="@string/activity_label" 
+        />
 
 </LinearLayout>

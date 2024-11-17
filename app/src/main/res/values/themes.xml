@@ -91,6 +91,9 @@
         <item name="seedWordStyle">@style/Aw.Component.SeedWord</item>
         <item name="whatsNewEntryStyle">@style/Aw.Component.WhatsNewEntry</item>
         <item name="materialAlertDialogTheme">@style/AppTheme.AlertDialog</item>
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -146,5 +149,6 @@
         <item name="checkboxStyle">@style/Aw.Component.CheckBox</item>
         <item name="radioButtonStyle">@style/Aw.Component.RadioButton</item>
     </style>
+    
 
 </resources>

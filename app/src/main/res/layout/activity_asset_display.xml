@@ -32,20 +32,31 @@
             android:layout_above="@id/layoutButtons"
             android:animateLayoutChanges="false">
 
-            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-                android:id="@+id/refresh_layout"
+            <!-- Box-like appearance using LinearLayout -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:background="@color/concrete"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/box_background">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/token_view"
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/refresh_layout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/concrete"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/token_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
 
         </RelativeLayout>
 

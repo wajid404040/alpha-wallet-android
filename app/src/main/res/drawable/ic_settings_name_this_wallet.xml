@@ -6,7 +6,7 @@
   <path
       android:pathData="M40 20c0 11.046 -8.954 20 -20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20"
       android:fillType="evenOdd"
-      android:fillColor="#001C06" />
+      android:fillColor="#1B5853" />
   <group
       android:translateX="8"
       android:translateY="13">

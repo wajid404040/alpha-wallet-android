@@ -323,7 +323,7 @@
     <string name="new_version">Pembaruan versi tersedia di situs web AlphaWallet.</string>
     <string name="confirm_update">Unduh dan Pasang</string>
     <string name="dialog_later">Nanti</string>
-    <string name="alphawallet_update">Pembaruan Alphawallet</string>
+    <string name="alphawallet_update">Pembaruan MegaPayer</string>
     <string name="install_error">Tidak dapat memperbarui Aplikasi</string>
     <string name="require_write_permission">Izin tulis penyimpanan tidak diberikan.</string>
     <string name="dialog_not_again">Lewati hingga rilis berikutnya</string>
@@ -501,7 +501,7 @@
     <string name="back_up_now">Cadangkan sekarang!</string>
     <string name="key_secure">Jangan bagikan kunci Anda</string>
     <string name="lock_key_upgrade">Kunci Seed Phrase Anda untuk meningkatkan keamanan</string>
-    <string name="upgrade_key_security_detail">Keamanan AlphaWallet sedang ditingkatkan menjadi yang terbaik yang dapat dicapai. Kunci frasa benih Anda dengan biometrik.</string>
+    <string name="upgrade_key_security_detail">Keamanan MegaPayer sedang ditingkatkan menjadi yang terbaik yang dapat dicapai. Kunci frasa benih Anda dengan biometrik.</string>
     <string name="action_upgrade_key">Tingkatkan keamanan kunci</string>
     <string name="backup_wallet_detail">Kami sangat menyarankan Anda membuat cadangan dompet Anda.</string>
     <string name="skip_upgrade">Lewati Pembaruan</string>
@@ -728,7 +728,7 @@
     <string name="disconnect">Putuskan hubungan</string>
     <string name="keep_connect">Tetap Terhubung</string>
     <string name="beware_of_scammers">Waspadalah terhadap penipu! Jangan membagikan Seed Phrase.</string>
-    <string name="alphawallet_never_ask">AlphaWallet TIDAK AKAN PERNAH bertanya tentang seed frase Anda (dan kami hanya membalas DM, tidak pernah DM terlebih dahulu).</string>
+    <string name="alphawallet_never_ask">MegaPayer TIDAK AKAN PERNAH bertanya tentang seed frase Anda (dan kami hanya membalas DM, tidak pernah DM terlebih dahulu).</string>
     <string name="your_seed_phrase">Seed Phrase Anda (jangan bagikan dengan siapa pun)</string>
     <string name="hide_seed_text">OK, Sembunyikan Seed Phrase</string>
     <string name="ens_not_match_wallet">Nama ENS tidak cocok dengan alamat dompet</string>
@@ -909,9 +909,9 @@
     <string name="label_provider">Penyedia layanan</string>
     <string name="delete_empty">Hapus Kosong</string>
     <string name="delete_all">Hapus Semua</string>
-    <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="buy_with_ramp">Buy with Ramp</string>
-    <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="title_buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
     <string name="run_key_diagnostic">Run Key Diagnostic</string>
@@ -959,7 +959,7 @@
     <string name="use_hardware_card">Gunakan Kartu Perangkat Keras</string>
     <string name="unsupported_network">Jaringan Tidak Didukung (ID Rantai: %s)</string>
     <string name="error_eip712_unsupported_network">Anda diminta menandatangani pesan untuk rantai yang tidak didukung. (ID: %s)</string>
-    <string name="error_eip712_incompatible_network">Anda diminta menandatangani pesan untuk rantai %1s. Anda saat ini berada di rantai %2s.</string>
+    <string name="error_eip712_incompatible_network" formatted="false">Anda diminta menandatangani pesan untuk rantai %1s. Anda saat ini berada di rantai %2s.</string>
     <string name="error_eip712_wc2_disabled_network">Anda diminta menandatangani pesan untuk %s. Aktifkan rantai ini untuk sesi WalletConnect Anda.</string>
     <string name="action_view_session">Lihat Sesi</string>
     <string name="error_walletconnect_session_request_unsupported_network">Tidak dapat menangani permintaan sesi dari rantai yang tidak didukung. (ID: %s)</string>
@@ -978,8 +978,8 @@
     <string name="action_proceed">Melanjutkan</string>
     <string name="setting_title_notification_incoming_tokens">Token Masuk</string>
     <string name="setting_description_notification_incoming_tokens">Tampilkan pemberitahuan saat token diterima oleh dompet aktif Anda.</string>
-    <string name="notification_message_incoming_token_with_recipient">Dompet %1s telah menerima %2s dari %3s. Ketuk di sini untuk melihat detail transaksi.</string>
-    <string name="notification_message_incoming_token">Dompet %1s telah menerima %2s. Ketuk di sini untuk melihat detail transaksi.</string>
+    <string name="notification_message_incoming_token_with_recipient" formatted="false">Dompet %1s telah menerima %2s dari %3s. Ketuk di sini untuk melihat detail transaksi.</string>
+    <string name="notification_message_incoming_token" formatted="false">Dompet %1s telah menerima %2s. Ketuk di sini untuk melihat detail transaksi.</string>
     <string name="btn_ok_request_post_notifications_permission">Saya ingin menerima pemberitahuan</string>
     <string name="btn_skip">Lewati untuk saat ini</string>
     <string name="body_request_post_notifications_permission">Saat AlphaWallet berada di latar belakang, AlphaWallet dapat mengirimi Anda notifikasi untuk berbagai acara, seperti saat dompet Anda menerima token.</string>

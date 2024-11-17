@@ -13,6 +13,7 @@
         android:layout_marginTop="@dimen/standard_16"
         android:layout_marginEnd="@dimen/standard_16"
         android:layout_marginBottom="@dimen/tiny_8"
-        tools:text="Header Title" />
+        tools:text="Header Title" 
+        />
 
 </FrameLayout>

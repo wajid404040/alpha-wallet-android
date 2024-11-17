@@ -107,7 +107,7 @@ public class InputView extends LinearLayout {
             boolean showPaste = a.getBoolean(R.styleable.InputView_show_paste, false);
             int headerTextId = a.getResourceId(R.styleable.InputView_label, R.string.token_name);
             header.setVisibility(showHeader ? View.VISIBLE : View.GONE);
-            header.setText(headerTextId);
+            // header.setText(headerTextId);
             scanQrIcon.setVisibility(noCam ? View.GONE : View.VISIBLE);
             pasteItem.setVisibility(showPaste ? View.VISIBLE : View.GONE);
 

@@ -1,6 +1,7 @@
 package com.alphawallet.app.ui.widget.holder;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -17,27 +18,31 @@ public class HeaderHolder extends BinderViewHolder<TokenGroup> {
 
     @Override
     public void bind(@Nullable TokenGroup data, @NonNull Bundle addition) {
-        title.setText(groupToHeader(data));
+        String headerText = groupToHeader(data);
+        if (headerText.isEmpty()) {
+            title.setVisibility(View.GONE); // Hide the TextView if the header text is empty
+        } else {
+            title.setVisibility(View.VISIBLE); // Show the TextView if there is header text
+            title.setText(headerText);
+        }
     }
 
     private String groupToHeader(TokenGroup data)
     {
-        if (data == null) return getString(R.string.assets);
+        if (data == null) return ""; // Return empty if data is null
+        
         switch (data)
         {
-            case ASSET:
-            default:
-                return getString(R.string.assets);
             case DEFI:
                 return getString(R.string.defi_header);
             case GOVERNANCE:
                 return getString(R.string.governance_header);
-            case NFT:
-                return getString(R.string.collectibles_header);
             case SPAM:
                 return getString(R.string.spam_header);
             case ATTESTATION:
                 return getString(R.string.attestations_header);
+            default:
+                return ""; // Return empty for any unhandled cases
         }
     }
 

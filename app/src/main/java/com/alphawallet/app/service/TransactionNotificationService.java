@@ -134,7 +134,7 @@ public class TransactionNotificationService
     private Notification buildNotification(PendingIntent pendingIntent, String event, String value, String fromAddress)
     {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_logo)
+            .setSmallIcon(R.drawable.mega)
             .setAutoCancel(true)
             .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000})
             .setOnlyAlertOnce(true)

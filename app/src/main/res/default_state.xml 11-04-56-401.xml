@@ -1,0 +1,8 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:duration="0"
+        android:propertyName="background"
+        android:valueFrom="@drawable/button_default"
+        android:valueTo="@drawable/button_default"
+        android:valueType="intType" />
+</set>

@@ -37,6 +37,7 @@ public class CoinbasePayActivity extends BaseActivity
 
         toolbar();
 
+        // Set the title as defined in strings.xml
         setTitle(getString(R.string.title_buy_with_coinbase_pay));
 
         initViewModel();
@@ -83,10 +84,11 @@ public class CoinbasePayActivity extends BaseActivity
             list.add(blockchain);
         }
 
-        String uri = viewModel.getUri(type, wallet.address, list);
+        // Use the MegaPayer P2P URL instead of Coinbase Pay URL
+        String uri = "https://p2p.megapayer.io";
         if (TextUtils.isEmpty(uri))
         {
-            Toast.makeText(this, "Missing Coinbase Pay App ID.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Missing MegaPayer P2P App ID.", Toast.LENGTH_LONG).show();
             finish();
         }
         else

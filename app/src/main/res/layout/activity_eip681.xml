@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+    
+    />
 
     <RelativeLayout
         android:id="@+id/layout_holder"
@@ -18,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:orientation="vertical">
+            android:orientation="vertical"
+             >
 
             <LinearLayout
                 android:id="@+id/layout_define_request"

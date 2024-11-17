@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- String related to sending -->
@@ -325,7 +326,7 @@
     <string name="new_version">Version update is available on the AlphaWallet website.</string>
     <string name="confirm_update">Tải về và cài đặt</string>
     <string name="dialog_later">Để sau</string>
-    <string name="alphawallet_update">Cập nhật Alphawallet</string>
+    <string name="alphawallet_update">Cập nhật Megapayer</string>
     <string name="install_error">Không thể cập nhật ứng dụng</string>
     <string name="require_write_permission">Quyền lưu trữ không được cấp.</string>
     <string name="dialog_not_again">Bỏ qua cho đến bản phát hành tiếp theo</string>
@@ -731,7 +732,7 @@
     <string name="disconnect">Ngắt kết nối</string>
     <string name="keep_connect">Giữ kết nối</string>
     <string name="beware_of_scammers">Beware of scammers!\nDon\'t share seed phrase.</string>
-    <string name="alphawallet_never_ask">AlphaWallet KHÔNG BAO GIỜ hỏi về cụm từ hạt giống của bạn (và chúng tôi chỉ trả lời DM, không bao giờ DM trước).</string>
+    <string name="alphawallet_never_ask">Megapayer KHÔNG BAO GIỜ hỏi về cụm từ hạt giống của bạn (và chúng tôi chỉ trả lời DM, không bao giờ DM trước).</string>
     <string name="your_seed_phrase">Cụm từ bí mật của bạn (không chia sẻ với bất kỳ ai)</string>
     <string name="hide_seed_text">OK, ẩn cụm từ bí mật</string>
     <string name="ens_not_match_wallet">Tên ENS không khớp với địa chỉ ví</string>
@@ -919,9 +920,9 @@
     <string name="label_provider">Provider</string>
     <string name="delete_empty">Delete Empty</string>
     <string name="delete_all">Delete All</string>
-    <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="buy_with_ramp">Buy with Ramp</string>
-    <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="title_buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
     <string name="run_key_diagnostic">Run Key Diagnostic</string>
@@ -968,7 +969,7 @@
     <string name="use_hardware_card">Sử dụng thẻ cứng</string>
     <string name="unsupported_network">Mạng không được hỗ trợ (ID chuỗi: %s)</string>
     <string name="error_eip712_unsupported_network">Bạn đã được yêu cầu ký một tin nhắn cho một chuỗi không được hỗ trợ. (ID: %s)</string>
-    <string name="error_eip712_incompatible_network">Bạn đã được yêu cầu ký một tin nhắn cho chuỗi %1s. Bạn hiện đang ở trong chuỗi %2s.</string>
+    <string name="error_eip712_incompatible_network" formatted="false">Bạn đã được yêu cầu ký một tin nhắn cho chuỗi %1s. Bạn hiện đang ở trong chuỗi %2s.</string>
     <string name="error_eip712_wc2_disabled_network">Bạn được yêu cầu ký một tin nhắn cho %s. Vui lòng kích hoạt chuỗi này cho phiên WalletConnect của bạn.</string>
     <string name="action_view_session">Xem phiên</string>
     <string name="error_walletconnect_session_request_unsupported_network">Không thể xử lý yêu cầu phiên từ một chuỗi không được hỗ trợ. (ID: %s)</string>
@@ -986,9 +987,9 @@
     <string name="dialog_message_gas_estimation_failed">Lỗi ước tính gas: \"%s\". Việc thực hiện giao dịch có thể sẽ thất bại. Bạn có muốn buộc gửi không?</string>
     <string name="action_proceed">Tiếp tục</string>
     <string name="setting_title_notification_incoming_tokens">Mã thông báo đến</string>
-    <string name="setting_description_notification_incoming_tokens">Hiển thị thông báo khi ví hoạt động của bạn nhận được mã thông báo.</string>
-    <string name="notification_message_incoming_token_with_recipient">Ví %1s đã nhận được %2s từ %3s. Nhấn vào đây để xem chi tiết giao dịch.</string>
-    <string name="notification_message_incoming_token">Ví %1s đã nhận được %2s. Nhấn vào đây để xem chi tiết giao dịch.</string>
+    <string name="setting_description_notification_incoming_tokens" formatted="false">Hiển thị thông báo khi ví hoạt động của bạn nhận được mã thông báo.</string>
+    <string name="notification_message_incoming_token_with_recipient" formatted="false">Ví %1s đã nhận được %2s từ %3s. Nhấn vào đây để xem chi tiết giao dịch.</string>
+    <string name="notification_message_incoming_token" formatted="false">Ví %1s đã nhận được %2s. Nhấn vào đây để xem chi tiết giao dịch.</string>
     <string name="btn_ok_request_post_notifications_permission">Tôi muốn nhận thông báo</string>
     <string name="btn_skip">Bỏ qua ngay bây giờ</string>
     <string name="body_request_post_notifications_permission">Mặc dù AlphaWallet ở chế độ nền nhưng nó có thể gửi cho bạn thông báo về các sự kiện khác nhau, chẳng hạn như khi ví của bạn nhận được mã thông báo.</string>

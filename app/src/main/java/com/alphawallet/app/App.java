@@ -70,7 +70,7 @@ public class App extends Application
         }
         else if (defaultTheme == C.THEME_DARK)
         {
-            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO);
         }
         else
         {

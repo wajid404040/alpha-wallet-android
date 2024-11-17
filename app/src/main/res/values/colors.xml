@@ -37,13 +37,13 @@
     <!-- ?colorOnBackground -->
     <color name="background_inverse">@color/black</color>
     <!-- ?colorSurface -->
-    <color name="surface">@color/white</color>
+    <color name="surface">#f5f5f5</color>
     <!-- ?colorSurfaceSecondary -->
     <color name="surface_secondary">@color/alabaster</color>
     <!-- ?colorSurfaceTertiary -->
     <color name="surface_tertiary">@color/concrete</color>
     <!-- ?colorSurfaceQuaternary -->
-    <color name="surface_quaternary">@color/mercury</color>
+    <color name="surface_quaternary">#165186</color>
     <!-- ?colorSurfaceQuinary -->
     <color name="surface_quinary">@color/mercury</color>
     <!-- ?colorOnSurface -->
@@ -53,17 +53,17 @@
     <!-- ?colorBackgroundFloating -->
     <color name="background_floating">@color/white</color>
     <!-- ?colorControlNormal -->
-    <color name="control">@color/black</color>
+<color name="control">#3a3434</color> <!-- Fully transparent -->
     <!-- ?colorControlActivated -->
     <color name="control_activated">@color/accent</color>
     <!-- ?colorControlHighlight -->
     <color name="control_highlight">@color/accent</color>
     <!-- ?android:textColorPrimary -->
-    <color name="text_primary">@color/black</color>
+    <color name="text_primary">#449982</color>
     <!-- ?android:textColorPrimaryInverse -->
     <color name="text_primary_inverse">@color/white</color>
     <!-- ?android:textColorScondaryInverse -->
-    <color name="text_secondary">@color/dove</color>
+    <color name="text_secondary">#575757</color>
     <!-- ?android:textColorSecondary -->
     <color name="text_secondary_inverse">@color/white</color>
     <color name="active_session_card_background">@color/solitude</color>
@@ -72,4 +72,19 @@
     <color name="dark_mode_icon_background_compensate">@color/transparent</color>
     <color name="dark_mode_token_icon_background_compensate">@color/transparent</color>
     <color name="surface_search">@color/white</color>
+     <color name="lightGreenBackground">#E0F8F8</color>
+     <color name="colorAccent">#FF4081</color>
+      <color name="yourGreenColor">#3a3434</color>
+      <color name="gray">#3a3434</color>
+        <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+  
+    <color name="colorPrimaryText">#FFFFFF</color> <!-- White text color for selected tab -->
+    <color name="colorPrimaryBackground">#F5F5F5</color>
+       <!-- Replace with your actual color value -->
+           <color name="background_color">#FFFFFF</color> <!-- Replace with your desired color -->
+    <color name="default_text_color">#000000</color>
+    <!-- Replace with your desired color -->
+ 
+     
 </resources>

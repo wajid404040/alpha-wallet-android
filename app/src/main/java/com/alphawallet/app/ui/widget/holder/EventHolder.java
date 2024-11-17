@@ -70,6 +70,7 @@ public class EventHolder extends BinderViewHolder<EventMeta> implements View.OnC
         assetDefinition = svs;
         fetchTransactionsInteract = interact;
         refreshSignaller = signaller;
+        date.setVisibility(View.GONE);
     }
 
     @Override

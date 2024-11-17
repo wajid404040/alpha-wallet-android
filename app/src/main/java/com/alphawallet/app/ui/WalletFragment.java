@@ -1,5 +1,6 @@
 package com.alphawallet.app.ui;
 
+// Import statements
 import static android.app.Activity.RESULT_OK;
 import static com.alphawallet.app.C.ADDED_TOKEN;
 import static com.alphawallet.app.C.ErrorCode.EMPTY_COLLECTION;
@@ -134,7 +135,6 @@ public class WalletFragment extends BaseFragment implements
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-
         View view = inflater.inflate(R.layout.fragment_wallet, container, false);
         LocaleUtils.setActiveLocale(getContext()); // Can't be placed before above line
 
@@ -245,10 +245,18 @@ public class WalletFragment extends BaseFragment implements
         adapter = new TokensAdapter(this, viewModel.getAssetDefinitionService(), viewModel.getTokensService(),
                 tokenManagementLauncher);
         adapter.setHasStableIds(true);
-        setLinearLayoutManager(TokenFilter.ALL.ordinal());
+        setLinearLayoutManager(TokenFilter.ASSETS.ordinal());
         recyclerView.setAdapter(adapter);
         if (recyclerView.getItemAnimator() != null)
             ((SimpleItemAnimator) recyclerView.getItemAnimator()).setSupportsChangeAnimations(false);
+
+        // Remove any existing ItemDecoration that adds space between items
+        while (recyclerView.getItemDecorationCount() > 0) {
+            recyclerView.removeItemDecorationAt(0);
+        }
+
+        // Add item decoration for the separator line
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext()));
 
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new SwipeCallback(adapter));
         itemTouchHelper.attachToRecyclerView(recyclerView);
@@ -263,7 +271,7 @@ public class WalletFragment extends BaseFragment implements
         viewModel = new ViewModelProvider(this)
                 .get(WalletViewModel.class);
         viewModel.progress().observe(getViewLifecycleOwner(), systemView::showProgress);
-        viewModel.tokens().observe(getViewLifecycleOwner(), this::onTokens);
+        viewModel.tokens().observe(getViewLifecycleOwner(), this::onFilteredTokens); // Changed to call onFilteredTokens
         viewModel.backupEvent().observe(getViewLifecycleOwner(), this::backupEvent);
         viewModel.defaultWallet().observe(getViewLifecycleOwner(), this::onDefaultWallet);
         viewModel.onFiatValues().observe(getViewLifecycleOwner(), this::updateValue);
@@ -291,7 +299,11 @@ public class WalletFragment extends BaseFragment implements
 
         largeTitleView = view.findViewById(R.id.large_title_view);
 
+        // Hide the progress view
         ((ProgressView) view.findViewById(R.id.progress_view)).hide();
+
+        // Hide scrollbar programmatically (if not set in XML)
+        recyclerView.setVerticalScrollBarEnabled(false);
     }
 
     private void onDefaultWallet(Wallet wallet)
@@ -437,11 +449,8 @@ public class WalletFragment extends BaseFragment implements
             tabLayout.setVisibility(View.GONE);
             return;
         }
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.all));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.assets));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.collectibles));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.defi_header));
-        //tabLayout.addTab(tabLayout.newTab().setText(R.string.attestations));
+        tabLayout.addTab(tabLayout.newTab().setText("Assets"));
+        tabLayout.addTab(tabLayout.newTab().setText("NFTs"));
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener()
         {
@@ -452,18 +461,13 @@ public class WalletFragment extends BaseFragment implements
                 adapter.setFilterType(newFilter);
                 switch (newFilter)
                 {
-                    case ALL:
                     case ASSETS:
-                    case DEFI:
-                    case GOVERNANCE:
                         recyclerView.setLayoutManager(new CompletionLayoutListener(getActivity()));
                         viewModel.prepare();
                         break;
                     case COLLECTIBLES:
                         setGridLayoutManager(TokenFilter.COLLECTIBLES);
                         viewModel.prepare();
-                        break;
-                    case ATTESTATIONS: // TODO: Filter Attestations
                         break;
                 }
             }
@@ -501,7 +505,7 @@ public class WalletFragment extends BaseFragment implements
 
     private TokenFilter setLinearLayoutManager(int selectedTab)
     {
-        currentTabPos = TokenFilter.values()[selectedTab];
+        currentTabPos = selectedTab == 0 ? TokenFilter.ASSETS : TokenFilter.COLLECTIBLES;
         return currentTabPos;
     }
 
@@ -512,11 +516,6 @@ public class WalletFragment extends BaseFragment implements
         {
             getParentFragmentManager().setFragmentResult(C.TOKEN_CLICK, new Bundle());
             selectedToken = view;
-            /*Token clickOrigin = viewModel.getTokenFromService(token);
-            if (clickOrigin == null || token.getInterfaceSpec() == ContractType.ATTESTATION)
-            {
-                clickOrigin = token;
-            }*/
             viewModel.showTokenDetail(getActivity(), token);
             handler.postDelayed(this, 700);
         }
@@ -525,7 +524,6 @@ public class WalletFragment extends BaseFragment implements
     @Override
     public void onLongTokenClick(View view, Token token, List<BigInteger> tokenId)
     {
-
     }
 
     @Override
@@ -562,7 +560,7 @@ public class WalletFragment extends BaseFragment implements
     public void onResume()
     {
         super.onResume();
-        currentTabPos = TokenFilter.ALL;
+        currentTabPos = TokenFilter.ASSETS;
         selectedToken = null;
         if (viewModel == null)
         {
@@ -595,24 +593,37 @@ public class WalletFragment extends BaseFragment implements
         }
     }
 
-    private void onTokens(TokenCardMeta[] tokens)
+    // New method to filter tokens
+    private void onFilteredTokens(TokenCardMeta[] tokens)
     {
-        if (tokens != null)
-        {
-            adapter.setTokens(tokens);
+        if (tokens != null) {
+            List<TokenCardMeta> assetTokens = new ArrayList<>();
+            for (TokenCardMeta token : tokens) {
+                if (!isNFT(token)) {
+                    assetTokens.add(token);
+                }
+            }
+            adapter.setTokens(assetTokens.toArray(new TokenCardMeta[0]));
             checkScrollPosition();
             viewModel.calculateFiatValues();
         }
         systemView.showProgress(false);
 
-        if (currentTabPos.equals(TokenFilter.ALL))
-        {
+        if (currentTabPos.equals(TokenFilter.ASSETS)) {
             checkWalletConnect();
-        }
-        else
-        {
+        } else {
             adapter.showActiveWalletConnectSessions(Collections.emptyList());
         }
+    }
+
+    private boolean isNFT(TokenCardMeta token) {
+        // Implement the logic to determine if a token is an NFT
+        return token.isNFT(); // Replace this with your actual logic
+    }
+
+    private void onTokens(TokenCardMeta[] tokens)
+    {
+        // Existing onTokens method logic
     }
 
     /**
@@ -724,10 +735,6 @@ public class WalletFragment extends BaseFragment implements
     @Override
     public void run()
     {
-//        if (selectedToken != null && selectedToken.findViewById(R.id.token_layout) != null)
-//        {
-//            selectedToken.findViewById(R.id.token_layout).setBackgroundResource(R.drawable.background_marketplace_event);
-//        }
         selectedToken = null;
     }
 
@@ -968,6 +975,36 @@ public class WalletFragment extends BaseFragment implements
 
             background.draw(c);
             icon.draw(c);
+        }
+    }
+
+    // Create an inner class for DividerItemDecoration to add lines between items
+    public class DividerItemDecoration extends RecyclerView.ItemDecoration {
+
+        private final Drawable divider;
+
+        public DividerItemDecoration(Context context) {
+            divider = ContextCompat.getDrawable(context, R.drawable.divider);
+        }
+
+        @Override
+        public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
+            int left = parent.getPaddingLeft();
+            int right = parent.getWidth() - parent.getPaddingRight();
+
+            int childCount = parent.getChildCount();
+            // Start drawing dividers from the second item
+            for (int i = 1; i < childCount; i++) {
+                View child = parent.getChildAt(i);
+
+                RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
+
+                int top = child.getTop() - params.topMargin;
+                int bottom = top + divider.getIntrinsicHeight();
+
+                divider.setBounds(left, top, right, bottom);
+                divider.draw(c);
+            }
         }
     }
 

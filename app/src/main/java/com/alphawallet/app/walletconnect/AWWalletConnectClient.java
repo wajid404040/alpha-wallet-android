@@ -326,7 +326,7 @@ public class AWWalletConnectClient implements Web3Wallet.WalletDelegate
         return new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setContentTitle(context.getString(R.string.notify_wallet_connect_title))
                 .setContentText(context.getString(R.string.notify_wallet_connect_content))
-                .setSmallIcon(R.drawable.ic_logo)
+                .setSmallIcon(R.drawable.mega)
                 .setContentIntent(pendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .build();

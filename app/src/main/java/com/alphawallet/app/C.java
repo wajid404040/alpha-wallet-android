@@ -19,7 +19,7 @@ public abstract class C {
     public static final int SEND_INTENT_REQUEST_CODE = 4;
     public static final int TERMINATE_ACTIVITY = 5;
     public static final int ADDED_TOKEN_RETURN = 9;
-    public static final int STANDARD_POPUP_INACTIVITY_DISMISS = 15*1000; //Standard dismiss after 15 seconds
+    public static final int STANDARD_POPUP_INACTIVITY_DISMISS = 15 * 1000; //Standard dismiss after 15 seconds
 
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
@@ -62,6 +62,9 @@ public abstract class C {
     public static final String BASE_MAINNET_NAME = "Base";
     public static final String BASE_TESTNET_NAME = "Base Sepolia (Test)";
 
+    // New network
+    public static final String GLOBAL_NETWORK_FOUNDATION_NAME = "GlobalNetworkFoundation";
+
     public static final String ETHEREUM_TICKER_NAME = "ethereum";
     public static final String CLASSIC_TICKER_NAME = "ethereum-classic";
     public static final String XDAI_TICKER_NAME = "dai";
@@ -97,7 +100,15 @@ public abstract class C {
 
     public static final String AMOY_TESTNET_SYMBOL = "Am" + ETH_SYMBOL;
 
+    // New network symbol
+    public static final String GLOBAL_NETWORK_FOUNDATION_SYMBOL = "GNF";
+
     public static final String BURN_ADDRESS = "0x0000000000000000000000000000000000000000";
+
+    // Other constants...
+    
+    // Placeholder for the GlobalNetworkFoundation picture URL
+  
 
     //some important known contracts - NB must be all lower case for switch statement
     public static final String DAI_TOKEN = "0x6b175474e89094c44da98b954eedeac495271d0f";
@@ -315,8 +326,8 @@ public abstract class C {
 
     // Theme/Dark Mode
     public static final int THEME_LIGHT = 0;
-    public static final int THEME_DARK = 1;
-    public static final int THEME_AUTO = 2;
+    public static final int THEME_DARK = -1;
+    public static final int THEME_AUTO = 0;
 
     // OpenSea APIs
     public static final String OPENSEA_COLLECTION_API_MAINNET = "https://api.opensea.io/collection/";

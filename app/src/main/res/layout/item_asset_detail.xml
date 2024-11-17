@@ -89,7 +89,8 @@
             style="@style/Aw.Typography.Sub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="A narcissist drew herself." />
+            tools:text="A narcissist drew herself." 
+            />
     </LinearLayout>
 
 </LinearLayout>

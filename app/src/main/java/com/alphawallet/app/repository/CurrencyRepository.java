@@ -26,7 +26,8 @@ public class CurrencyRepository implements CurrencyRepositoryType {
             new CurrencyItem("PKR", "Pakistani Rupee", "Rs", R.drawable.ic_flags_pakistan),
             new CurrencyItem("MMK", "Myanmar Kyat", "Ks", R.drawable.ic_flags_myanmar),
             new CurrencyItem("IDR", "Indonesian Rupiah", "Rp", R.drawable.ic_flags_indonesia),
-            new CurrencyItem("BDT", "Bangladeshi Taka", "৳", R.drawable.ic_flags_bangladesh)
+            new CurrencyItem("BDT", "Bangladeshi Taka", "৳", R.drawable.ic_flags_bangladesh),
+            new CurrencyItem("UZS", "Uzbekistani Soʻm", "soʻm", R.drawable.ic_flags_uzbek),  // Added Uzbekistan currency
     };
 
     private final PreferenceRepositoryType preferences;

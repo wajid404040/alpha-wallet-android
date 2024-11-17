@@ -130,9 +130,9 @@
     <string name="set_a_price">Fija un precio:</string>
     <string name="learn_more_about_ethereum">Más información sobre Ethereum</string>
     <string name="price_per_ticket">Precio por ticket</string>
-    <string name="set_price_subtext_abr">Fijar el precio en %1s (%2s)</string>
+    <string name="set_price_subtext_abr" formatted="false">Fijar el precio en %1s (%2s)</string>
     <string name="transfer_tickets">Transferir tickets</string>
-    <string name="link_valid_until">El MagicLink será válido hasta %1s %2s</string>
+    <string name="link_valid_until" formatted="false">El MagicLink será válido hasta %1s %2s</string>
     <string name="generate_pick_up_link">Generar un MagicLink</string>
     <string name="transfer_now">Transferir ahora</string>
     <string name="to">a</string>
@@ -312,12 +312,12 @@
     <string name="new_version">La actualización de la versión está disponible en el sitio web de AlphaWallet.</string>
     <string name="confirm_update">Descargar e instalar</string>
     <string name="dialog_later">Más tarde</string>
-    <string name="alphawallet_update">Actualización de AlphaWallet</string>
+    <string name="alphawallet_update">Actualización de MegaPayer</string>
     <string name="install_error">No ha sido posible actualizar la aplicación</string>
     <string name="require_write_permission">No se ha concedido permiso de escritura en el almacenamiento.</string>
     <string name="dialog_not_again">Omitir hasta la próxima versión</string>
     <string name="enable_xml_override_dir">Activar la sustitución de XML</string>
-    <string name="explain_xml_override">Al Activar la sustitución de XML se creará un directorio \"AlphaWallet\" en el almacenamiento de tu teléfono. Los archivos de configuración del token (XML) se pueden introducir en este directorio y sustituirán a las configuraciones predeterminadas o de red del token.</string>
+    <string name="explain_xml_override">Al Activar la sustitución de XML se creará un directorio \"MegaPayer\" en el almacenamiento de tu teléfono. Los archivos de configuración del token (XML) se pueden introducir en este directorio y sustituirán a las configuraciones predeterminadas o de red del token.</string>
     <string name="ask_user_about_xml_override">¿Deseas activar el directorio de sustitución de la configuración del token?</string>
     <string name="label_contract">Contrato</string>
     <string name="toolbar_header_browser">Navegador DApp</string>
@@ -490,7 +490,7 @@
     <string name="back_up_now">¡Hacer una copia de seguridad ahora!</string>
     <string name="key_secure">No compartas tu clave</string>
     <string name="lock_key_upgrade">Bloquea tu frase semilla para aumentar la seguridad</string>
-    <string name="upgrade_key_security_detail">La seguridad de AlphaWallet se ha mejorado al máximo. Bloquea tu frase semilla mediante biometría.</string>
+    <string name="upgrade_key_security_detail">La seguridad de MegaPayer se ha mejorado al máximo. Bloquea tu frase semilla mediante biometría.</string>
     <string name="action_upgrade_key">Mejorar la seguridad de las claves</string>
     <string name="backup_wallet_detail">Te recomendamos encarecidamente que hagas una copia de seguridad de tu monedero.</string>
     <string name="skip_upgrade">Omitir mejora</string>
@@ -715,7 +715,7 @@
     <string name="disconnect">Disconnect</string>
     <string name="keep_connect">Keep Connected</string>
     <string name="beware_of_scammers">Beware of scammers!\nDon\'t share seed phrase.</string>
-    <string name="alphawallet_never_ask">AlphaWallet NUNCA le preguntará sobre su frase inicial (y solo respondemos a los mensajes directos, nunca a los mensajes directos primero).</string>
+    <string name="alphawallet_never_ask">MegaPayer NUNCA le preguntará sobre su frase inicial (y solo respondemos a los mensajes directos, nunca a los mensajes directos primero).</string>
     <string name="your_seed_phrase">Your seed phrase (do not share with anyone)</string>
     <string name="hide_seed_text">OK, Hide Seed Phrase</string>
     <string name="ens_not_match_wallet">ENS Name does not match wallet address</string>
@@ -903,9 +903,9 @@
     <string name="label_provider">Provider</string>
     <string name="delete_empty">Delete Empty</string>
     <string name="delete_all">Delete All</string>
-    <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="buy_with_ramp">Buy with Ramp</string>
-    <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="title_buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
     <string name="run_key_diagnostic">Run Key Diagnostic</string>
@@ -954,7 +954,7 @@
     <string name="use_hardware_card">Usar tarjeta de hardware</string>
     <string name="unsupported_network">Red no admitida (ID de cadena: %s)</string>
     <string name="error_eip712_unsupported_network">Se le solicitó que firmara un mensaje para una cadena no admitida. (ID: %s)</string>
-    <string name="error_eip712_incompatible_network">Se le solicitó que firmara un mensaje para la cadena %1$s. Actualmente estás en la cadena %2$s.</string>
+  
     <string name="error_eip712_wc2_disabled_network">Se le solicitó que firmara un mensaje para %s. Habilite esta cadena para su sesión de WalletConnect.</string>
     <string name="action_view_session">Ver sesión</string>
     <string name="error_walletconnect_session_request_unsupported_network">No se puede manejar la solicitud de sesión de una cadena no admitida. (ID: %s)</string>

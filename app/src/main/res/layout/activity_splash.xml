@@ -42,7 +42,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_import"
-            style="@style/Aw.Component.Button.Secondary"
+            style="@style/Aw.Component.Button.Primary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/i_already_have_a_wallet" />

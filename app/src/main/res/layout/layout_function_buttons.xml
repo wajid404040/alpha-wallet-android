@@ -54,7 +54,8 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/primary_button"
-                style="@style/Aw.Component.Button.Primary"
+                android:background="@drawable/button_background_receive"
+               
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/double_base_48"
                 android:visibility="visible"
@@ -74,11 +75,12 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/secondary_button"
-            style="@style/Aw.Component.Button.Secondary"
+             android:background="@drawable/button_background_send"
             android:layout_width="0dp"
             android:layout_height="@dimen/double_base_48"
             android:layout_marginStart="@dimen/mini_4"
             android:layout_weight="0.5"
+            
             android:visibility="gone"
             tools:text="Secondary"
             tools:visibility="visible" />

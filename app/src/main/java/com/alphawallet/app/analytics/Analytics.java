@@ -55,7 +55,6 @@ public class Analytics
         SELECT_NETWORKS("Select Networks"),
         CHANGE_LANGUAGE("Change Language"),
         CHANGE_CURRENCY("Change Currency"),
-        SETTINGS_DARK_MODE("Settings - Dark Mode"),
         SETTINGS_ADVANCED("Settings - Advanced"),
         SETTINGS_SUPPORT("Settings - Support"),
         ADD_CUSTOM_NETWORK("Add Custom Network"),

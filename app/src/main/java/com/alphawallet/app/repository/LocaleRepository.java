@@ -19,7 +19,12 @@ public class LocaleRepository implements LocaleRepositoryType {
             "fr",
             "vi",
             "my",
+            "uz",
+            "ar",
+            "ru",
+            "tr",
             "id"
+           
     };
 
     private final PreferenceRepositoryType preferences;

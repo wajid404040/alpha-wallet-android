@@ -45,7 +45,7 @@ public class SelectThemeViewModel extends BaseViewModel
         }
         else if (theme == C.THEME_DARK)
         {
-            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO);
         }
         else
         {

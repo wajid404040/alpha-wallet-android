@@ -76,7 +76,8 @@ public class TransferHolder extends BinderViewHolder<TokenTransferData> implemen
         assetDefinition = svs;
 
         fetchTransactionsInteract = interact;
-    }
+        date.setVisibility(View.GONE);
+    } 
 
     @Override
     public void bind(@Nullable TokenTransferData data, @NonNull Bundle addition)

@@ -219,7 +219,7 @@
     <string name="ticket">门票</string>
     <string name="tickets">门票</string>
     <string name="failed">失效</string>
-    <string name="total_cost_for_x_tickets">成本价t for %1d %2$s:</string>
+    <string name="total_cost_for_x_tickets" formatted="false" >成本价t for %1d %2$s:</string>
     <string name="title_import_token">导入门票</string>
     <string name="action_cancel">取消</string>
     <string name="confirm_purchase">确认购买</string>
@@ -313,7 +313,7 @@
     <string name="new_version">前往 AlphaWallet 网站即可获得版本更新资讯。</string>
     <string name="confirm_update">下载并安装</string>
     <string name="dialog_later">稍后</string>
-    <string name="alphawallet_update">AlphaWallet 更新</string>
+    <string name="alphawallet_update">Megapayer 更新</string>
     <string name="install_error">无法更新应用</string>
     <string name="require_write_permission">未授予存储写入权限。</string>
     <string name="dialog_not_again">跳过直至下一版本</string>
@@ -716,7 +716,7 @@
     <string name="disconnect">Disconnect</string>
     <string name="keep_connect">Keep Connected</string>
     <string name="beware_of_scammers">Beware of scammers!\nDon\'t share seed phrase.</string>
-    <string name="alphawallet_never_ask">AlphaWallet 永远不会询问您的助记词（我们只回复私信，从不先私信）。</string>
+    <string name="alphawallet_never_ask">Megapayer 永远不会询问您的助记词（我们只回复私信，从不先私信）。</string>
     <string name="your_seed_phrase">Your seed phrase (do not share with anyone)</string>
     <string name="hide_seed_text">OK, Hide Seed Phrase</string>
     <string name="ens_not_match_wallet">ENS Name does not match wallet address</string>
@@ -904,9 +904,9 @@
     <string name="label_provider">Provider</string>
     <string name="delete_empty">Delete Empty</string>
     <string name="delete_all">Delete All</string>
-    <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="buy_with_ramp">Buy with Ramp</string>
-    <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="title_buy_with_coinbase_pay">Buy with Megapayer P2P</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
     <string name="run_key_diagnostic">Run Key Diagnostic</string>
@@ -955,7 +955,7 @@
     <string name="use_hardware_card">使用硬件卡</string>
     <string name="unsupported_network" formatted="false">不支持的网络（链 ID：%s）</string>
     <string name="error_eip712_unsupported_network">您被要求为不受支持的链签署消息。(ID: %s)</string>
-    <string name="error_eip712_incompatible_network">您被要求为 %1s 链签署消息。 您目前在 %2s 链上。</string>
+    <string name="error_eip712_incompatible_network" formatted="false">您被要求为 %1s 链签署消息。 您目前在 %2s 链上。</string>
     <string name="error_eip712_wc2_disabled_network">您被要求为 %s 的消息签名。 请为您的 WalletConnect 会话启用此链。</string>
     <string name="action_view_session">查看会话</string>
     <string name="error_walletconnect_session_request_unsupported_network">无法处理来自不受支持的链的会话请求。(ID: %s)</string>
@@ -974,8 +974,8 @@
     <string name="action_proceed">继续</string>
     <string name="setting_title_notification_incoming_tokens">传入令牌</string>
     <string name="setting_description_notification_incoming_tokens">当您的活动钱包收到令牌时显示通知。</string>
-    <string name="notification_message_incoming_token_with_recipient">钱包 %1s 已从 %3s 收到 %2s。 点击此处查看交易详情。</string>
-    <string name="notification_message_incoming_token">钱包 %1s 已收到 %2s。 点击此处查看交易详情。</string>
+    <string name="notification_message_incoming_token_with_recipient" formatted="false">钱包 %1s 已从 %3s 收到 %2s。 点击此处查看交易详情。</string>
+    <string name="notification_message_incoming_token" formatted="false">钱包 %1s 已收到 %2s。 点击此处查看交易详情。</string>
     <string name="btn_ok_request_post_notifications_permission">我想收到通知</string>
     <string name="btn_skip">暂时跳过</string>
     <string name="body_request_post_notifications_permission">当 AlphaWallet 在后台运行时，它可以向您发送各种事件的通知，例如您的钱包何时收到代币。</string>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+> <!-- Overall background color -->
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+        />
 
     <LinearLayout
         android:id="@+id/layout_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?android:attr/actionBarSize"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/detail_transaction" 
+        android:padding="16dp"> <!-- Padding inside the box -->
 
         <View style="@style/Aw.Component.Separator" />
 

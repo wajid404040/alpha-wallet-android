@@ -37,22 +37,16 @@ public class SelectThemeActivity extends BaseActivity
     private void initViews()
     {
         LinearLayout lightThemeLayout = findViewById(R.id.layout_theme_light);
-        LinearLayout darkThemeLayout = findViewById(R.id.layout_theme_dark);
         LinearLayout autoThemeLayout = findViewById(R.id.layout_theme_auto);
         RadioGroup radioGroup = findViewById(R.id.radio_group);
 
         lightThemeLayout.setOnClickListener(v -> radioGroup.check(R.id.radio_theme_light));
-        darkThemeLayout.setOnClickListener(v -> radioGroup.check(R.id.radio_theme_dark));
         autoThemeLayout.setOnClickListener(v -> radioGroup.check(R.id.radio_theme_auto));
 
         int theme = viewModel.getTheme();
         if (theme == C.THEME_LIGHT)
         {
             radioGroup.check(R.id.radio_theme_light);
-        }
-        else if (theme == C.THEME_DARK)
-        {
-            radioGroup.check(R.id.radio_theme_dark);
         }
         else
         {
@@ -64,10 +58,6 @@ public class SelectThemeActivity extends BaseActivity
             if (checkedId == R.id.radio_theme_light)
             {
                 viewModel.setTheme(getApplicationContext(), C.THEME_LIGHT);
-            }
-            else if (checkedId == R.id.radio_theme_dark)
-            {
-                viewModel.setTheme(getApplicationContext(), C.THEME_DARK);
             }
             else
             {

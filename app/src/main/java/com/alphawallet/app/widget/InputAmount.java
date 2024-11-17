@@ -461,7 +461,7 @@ public class InputAmount extends LinearLayout
             int headerTextId = a.getResourceId(R.styleable.InputView_label, R.string.amount);
             header.setVisibility(showHeader ? View.VISIBLE : View.GONE);
             allFunds.setVisibility(showAllFunds ? View.VISIBLE : View.GONE);
-            header.setText(headerTextId);
+            // header.setText(headerTextId);
             header.getChainName().setVisibility(showChainName ? View.VISIBLE : View.GONE);
             if (currencyMode)
             {

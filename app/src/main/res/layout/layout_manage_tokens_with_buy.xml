@@ -8,11 +8,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/primary_button"
-        style="@style/Aw.Component.Button.Primary"
+        style="@style/buybutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/standard_16"
-        android:text="@string/buy_eth" />
+        android:text="@string/buy_eth"
+        android:background="#165186"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/img_add_token"

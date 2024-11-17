@@ -72,7 +72,7 @@ public class AddEditDappActivity extends BaseActivity
             favicon = DappBrowserUtils.getIconUrl(visibleUrl);
             Glide.with(this)
                     .load(favicon)
-                    .apply(new RequestOptions().placeholder(R.drawable.ic_logo))
+                    .apply(new RequestOptions().placeholder(R.drawable.mega))
                     .into(icon);
         }
 

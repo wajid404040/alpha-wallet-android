@@ -9,15 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_margin="@dimen/tiny_8"
-        android:background="@drawable/background_round_search"
+        
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+         android:visibility="gone">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/base_24"
             android:layout_height="@dimen/base_24"
             android:layout_marginStart="@dimen/small_12"
-            android:src="@drawable/ic_search_small" />
+            android:src="@drawable/ic_search_small"
+             android:visibility="gone"
+     />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edit_search"
@@ -29,7 +32,8 @@
             android:hint="@string/search_for_tokens"
             android:inputType="textFilter"
             android:maxLength="20"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:visibility="gone" />
 
     </LinearLayout>
 

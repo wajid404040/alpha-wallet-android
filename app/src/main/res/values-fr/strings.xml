@@ -322,7 +322,7 @@
     <string name="new_version">Mise à jour de la version disponible sur le site AlphaWallet.</string>
     <string name="confirm_update">Télécharger et Installer</string>
     <string name="dialog_later">Plus tard</string>
-    <string name="alphawallet_update">Mise à jour Alphawallet </string>
+    <string name="alphawallet_update">Mise à jour MegaPayer</string>
     <string name="install_error">Mise à jour impossible</string>
     <string name="require_write_permission">L\'autorisation d\'écriture de stockage n\'est pas donnée.</string>
     <string name="dialog_not_again">Passer jusqu\'à la prochaine version</string>
@@ -728,7 +728,7 @@
     <string name="disconnect">Déconnecter</string>
     <string name="keep_connect">Rester Connecté(e)</string>
     <string name="beware_of_scammers"> Méfiez-vous des escrocs! \nNe partagez pas votre phrase seed.</string>
-    <string name="alphawallet_never_ask">AlphaWallet ne vous posera JAMAIS de questions sur votre phrase de départ (et nous répondons uniquement aux DM, jamais aux DM en premier).</string>
+    <string name="alphawallet_never_ask">MegaPayer ne vous posera JAMAIS de questions sur votre phrase de départ (et nous répondons uniquement aux DM, jamais aux DM en premier).</string>
     <string name="your_seed_phrase">Votre phrase seed (ne la partager avec personne)</string>
     <string name="hide_seed_text">OK, Cacher votre Phrase Seed</string>
     <string name="ens_not_match_wallet">Le nom ENS ne correspond pas à l\'adresse du portefeuille</string>
@@ -917,9 +917,9 @@
     <string name="label_provider">Provider</string>
     <string name="delete_empty">Delete Empty</string>
     <string name="delete_all">Delete All</string>
-    <string name="buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="buy_with_coinbase_pay">Buy with MegaPayer P2P</string>
     <string name="buy_with_ramp">Buy with Ramp</string>
-    <string name="title_buy_with_coinbase_pay">Buy with Coinbase Pay</string>
+    <string name="title_buy_with_coinbase_pay">Buy with MegaPayer P2P</string>
     <string name="key_status">Key Status</string>
     <string name="fix_key_state">Fix Key State</string>
     <string name="run_key_diagnostic">Run Key Diagnostic</string>
@@ -968,7 +968,7 @@
     <string name="use_hardware_card">Utiliser une carte matérielle</string>
     <string name="unsupported_network">Réseau non pris en charge (ID de chaîne: %s)</string>
     <string name="error_eip712_unsupported_network">Vous avez été invité à signer un message pour une chaîne non prise en charge. (ID: %s)</string>
-    <string name="error_eip712_incompatible_network">Vous avez été invité à signer un message pour la chaîne %1s. Vous êtes actuellement sur la chaîne %2s.</string>
+  
     <string name="error_eip712_wc2_disabled_network">Vous avez été invité à signer un message pour %s. Veuillez activer cette chaîne pour votre session WalletConnect.</string>
     <string name="action_view_session">Voir la session</string>
     <string name="error_walletconnect_session_request_unsupported_network">Impossible de gérer la demande de session d\'une chaîne non prise en charge. (ID: %s)</string>
@@ -1010,4 +1010,7 @@
     <string name="override_warning_text">Vous êtes peut-être sur le point de signer sans le savoir une transaction, ce qui pourrait vider vos fonds. Vous souhaiterez peut-être signer le bytecode en tant que développeur et vous pouvez ignorer cet avertissement si vous définissez le mode développeur dans les paramètres avancés.</string>
     <string name="constructor">Constructor</string>
     <string name="use_tokenscript_viewer">Visionneuse TokenScript</string>
+    <string name="error_eip712_incompatible_network" formatted="false">Error: %s, %s</string>
+
+
 </resources>

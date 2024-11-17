@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+      />
 
     <com.alphawallet.app.widget.InputAddress
         android:id="@+id/input_address_view"

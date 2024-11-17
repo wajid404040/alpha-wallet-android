@@ -84,7 +84,7 @@ public class BrowserHistoryAdapter extends RecyclerView.Adapter<BrowserHistoryAd
             Glide.with(viewHolder.icon.getContext())
                     .load(favicon)
                     .apply(new RequestOptions().circleCrop())
-                    .apply(new RequestOptions().placeholder(R.drawable.ic_logo))
+                    .apply(new RequestOptions().placeholder(R.drawable.mega))
                     .listener(requestListener)
                     .into(viewHolder.icon);
 

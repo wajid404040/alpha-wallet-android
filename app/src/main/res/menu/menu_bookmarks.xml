@@ -70,7 +70,7 @@
 
         <item
             android:id="@+id/action_clear_cache"
-            android:icon="@drawable/ic_settings_cache"
+            android:icon="@drawable/settingss"
             android:orderInCategory="9"
             android:title="@string/title_clear_browser_cache"
             app:iconTint="?colorControlNormal"

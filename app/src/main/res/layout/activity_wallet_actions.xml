@@ -45,7 +45,8 @@
                         android:layout_height="wrap_content"
                         app:settingIcon="-1"
                         app:settingTitle="@string/show_seed_phrase"
-                        app:settingType="default" />
+                        app:settingType="default"
+                        android:visibility="visible" />
 
                 <TextView
                         android:id="@+id/backup_text"

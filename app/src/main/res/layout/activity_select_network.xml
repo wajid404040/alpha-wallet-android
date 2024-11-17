@@ -7,37 +7,56 @@
     android:scrollbarAlwaysDrawVerticalTrack="true"
     android:scrollbars="vertical">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+   
+    />
 
     <View
         android:id="@+id/separator"
         style="@style/Aw.Component.Separator"
-        android:layout_below="@id/toolbar" />
+        android:layout_below="@id/toolbar"
+        />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/network_scroller"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/separator">
+        android:layout_below="@id/separator"
+         android:background="#f5f5f5">
 
         <LinearLayout
             android:id="@+id/layout_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:descendantFocusability="blocksDescendants"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
 
             <com.alphawallet.app.widget.StandardHeader
                 android:id="@+id/mainnet_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:headerText="@string/mainnet"
-                app:showSwitch="false" />
+                app:showSwitch="false"
+                 android:background="#FFFFFF" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/main_list"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/detail_transaction"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <com.alphawallet.app.widget.StandardHeader
                 android:id="@+id/testnet_header"
@@ -46,11 +65,24 @@
                 app:headerText="@string/testnet"
                 app:showSwitch="true" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/test_list"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone" />
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/detail_transaction"
+                
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/test_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
 
         </LinearLayout>
 

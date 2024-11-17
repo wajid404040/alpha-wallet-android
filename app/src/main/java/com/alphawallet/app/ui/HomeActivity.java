@@ -9,6 +9,7 @@ import static com.alphawallet.app.entity.WalletPage.DAPP_BROWSER;
 import static com.alphawallet.app.entity.WalletPage.SETTINGS;
 import static com.alphawallet.app.entity.WalletPage.WALLET;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
+import com.alphawallet.app.StartActivity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -153,7 +154,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         //Set alert to user to update their app
         updatePrompt = true;
     }
-
+    
     @Override
     public void onStateChanged(@NonNull LifecycleOwner source, @NonNull Lifecycle.Event event)
     {
@@ -192,6 +193,27 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     {
         super.attachBaseContext(base);
     }
+
+
+    @Override
+public void onBackPressed() {
+    if (viewPager.getCurrentItem() == DAPP_BROWSER.ordinal()) {
+        getFragment(DAPP_BROWSER).backPressed();
+    } else if (viewPager.getCurrentItem() != WALLET.ordinal() && isNavBarVisible()) {
+        showPage(WALLET);
+    } else if (viewPager.getCurrentItem() == WALLET.ordinal()) {
+        // Start StartActivity instead of closing the app
+        Intent intent = new Intent(HomeActivity.this, StartActivity.class);
+        startActivity(intent);
+        finish(); // Optional: Close HomeActivity if you don't want it to stay in the back stack
+    } else {
+        super.onBackPressed(); // Default behavior
+    }
+}
+
+
+
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus)
@@ -233,6 +255,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         viewModel.tryToShowWhatsNewDialog(this);
         setContentView(R.layout.activity_home);
 
+        
         initViews();
         toolbar();
 
@@ -1063,24 +1086,8 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         removeSettingsBadgeKey(C.KEY_NEEDS_BACKUP);
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        //Check if current page is WALLET or not
-        if (viewPager.getCurrentItem() == DAPP_BROWSER.ordinal())
-        {
-            getFragment(DAPP_BROWSER).backPressed();
-        }
-        else if (viewPager.getCurrentItem() != WALLET.ordinal() && isNavBarVisible())
-        {
-            showPage(WALLET);
-        }
-        else
-        {
-            super.onBackPressed();
-        }
-    }
-
+   
+    
     private void hideSystemUI()
     {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);

@@ -4,18 +4,24 @@
     android:id="@+id/settings_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <include layout="@layout/layout_simple_toolbar" />
+    <include layout="@layout/layout_simple_toolbar"
+      />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <!-- Settings Heading -->
+           
 
             <com.alphawallet.app.widget.NotificationView
                 android:id="@+id/notification"
@@ -24,41 +30,55 @@
 
             <include layout="@layout/item_warning" />
 
-            <include layout="@layout/item_update" />
-
             <com.alphawallet.app.widget.StandardHeader
                 android:id="@+id/layout_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                custom:headerText="@string/wallet_label" />
+                custom:headerText="@string/wallet_label"
+                android:visibility="gone" />
 
-            <LinearLayout
-                android:id="@+id/layout_settings_wallet"
+           
+
+            <!-- Styled Box with Rounded Corners and Shadow -->
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:layout_margin="16dp"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:background="@drawable/detail_transaction">
 
-            <com.alphawallet.app.widget.StandardHeader
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                custom:headerText="@string/system" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/layout_settings_system"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                    <!-- Wallet Section -->
+                    <LinearLayout
+                        android:id="@+id/layout_settings_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
 
-            <com.alphawallet.app.widget.StandardHeader
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                custom:headerText="@string/support" />
+                    <!-- System Section -->
+                    <LinearLayout
+                        android:id="@+id/layout_settings_system"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                         />
 
-            <LinearLayout
-                android:id="@+id/layout_settings_support"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                    <!-- Support Section -->
+                    <LinearLayout
+                        android:id="@+id/layout_settings_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
 
